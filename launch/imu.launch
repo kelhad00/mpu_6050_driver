@@ -1,0 +1,11 @@
+<launch>
+  <machine
+    name="ubuntu"
+    address="10.104.202.70"
+    env-loader="/opt/ros/noetic/env_remote1.sh"
+    default="true"
+    user="ubuntu"
+  />
+
+  <node name="mpu_6050_driver" pkg="mpu_6050_driver" type="imu_node.py" />
+</launch>
